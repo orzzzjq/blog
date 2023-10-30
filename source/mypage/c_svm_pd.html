@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>SVM and Polytope Distance</title>
-<!--Generated on Fri Oct 27 21:39:34 2023 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Generated on Mon Oct 30 16:50:04 2023 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
 <!--Document created on October 2023.-->
 
 <link rel="stylesheet" href="css/ar5iv.min.css" type="text/css">
@@ -336,13 +336,265 @@ T}\bm{\eta}" display="inline"><mrow><mrow><mo>+</mo><mrow><msup><mi>𝝀</mi><mi
 <span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Theorem 2</span></span><span class="ltx_text ltx_font_bold">.</span>
 </h6>
 <div id="Thmclaim2.p1" class="ltx_para">
-<p class="ltx_p"><span class="ltx_text ltx_font_italic">With an appropriate choice of the parameters <math id="Thmclaim2.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and <math id="Thmclaim2.p1.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>, the problems (<a href="#S1.Ex2" title="(S-Margin) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">S-Margin</span></a>) and (<a href="#S1.Ex7" title="(C-SVM) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag"><math class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>-SVM</span></a>) are equivalent.</span></p>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">With an appropriate choice of the parameters <math id="Thmclaim2.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and <math id="Thmclaim2.p1.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>, the problems (<a href="#S1.Ex2" title="(S-Margin) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">S-Margin</span></a>) and (<a href="#S1.Ex7" title="(C-SVM) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag"><math class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>-SVM</span></a>) are equivalent if the optimal objective is strictly greater than 0.</span></p>
 </div>
 </div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
 <div id="S1.p11" class="ltx_para ltx_noindent">
-<p class="ltx_p">To be continued.</p>
+<p class="ltx_p">Recall that <math id="S1.p11.m1" class="ltx_Math" alttext="(\bar{\bm{w}},\bar{\bm{\xi}},\bar{\bm{\eta}},\bar{\alpha},\bar{\beta},\bar{\bm%
+{\mu}},\bar{\bm{\lambda}})" display="inline"><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>α</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>β</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow></math> is a KKT point of (<a href="#S1.Ex2" title="(S-Margin) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">S-Margin</span></a>) if it satisfies:</p>
+<table id="S1.E1" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="S1.E1X" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Stationary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1X.m3" class="ltx_Math" alttext="\displaystyle\bar{\bm{w}}-\bm{P}\bar{\bm{\mu}}+\bm{Q}\bar{\bm{\lambda}}=0" display="inline"><mrow><mrow><mrow><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover><mo>-</mo><mrow><mi>𝑷</mi><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover></mrow></mrow><mo>+</mo><mrow><mi>𝑸</mi><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="10" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equationgroup ltx_align_right">(1)</span></td>
+</tr>
+<tr id="S1.E1Xa" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xa.m2" class="ltx_Math" alttext="\displaystyle D\bm{1}-\bar{\bm{\mu}}\geq 0" display="inline"><mrow><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xb" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xb.m2" class="ltx_Math" alttext="\displaystyle D\bm{1}-\bar{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xc" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xc.m2" class="ltx_Math" alttext="\displaystyle\bm{1}^{T}\bar{\bm{\mu}}-1=0" display="inline"><mrow><mrow><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover></mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xd" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xd.m2" class="ltx_Math" alttext="\displaystyle\bm{1}^{T}\bar{\bm{\lambda}}-1=0" display="inline"><mrow><mrow><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover></mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xe" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Complementary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xe.m3" class="ltx_Math" alttext="\displaystyle\bar{\bm{\mu}}^{T}(\bm{P}^{T}\bar{\bm{w}}-\alpha\bm{1}+\bar{\bm{%
+\xi}})=0,\quad(D\bm{1}-\bar{\bm{\mu}})^{T}\bar{\bm{\xi}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover></mrow><mo>-</mo><mrow><mi>α</mi><mo>⁢</mo><mn>𝟏</mn></mrow></mrow><mo>+</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">¯</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xf" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xf.m2" class="ltx_Math" alttext="\displaystyle\bar{\bm{\lambda}}^{T}(\bm{Q}^{T}\bar{\bm{w}}-\beta\bm{1}-\bar{%
+\bm{\eta}})=0,\quad(D\bm{1}-\bar{\bm{\lambda}})^{T}\bar{\bm{\eta}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover></mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">¯</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xg" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Primal feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xg.m3" class="ltx_Math" alttext="\displaystyle\bm{P}^{T}\bar{\bm{w}}\geq\alpha\bm{1}-\bar{\bm{\xi}},\quad\bar{%
+\bm{\xi}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover></mrow><mo>≥</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">¯</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝝃</mi><mo stretchy="false">¯</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xh" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xh.m2" class="ltx_Math" alttext="\displaystyle\bm{Q}^{T}\bar{\bm{w}}\leq\beta\bm{1}+\bar{\bm{\eta}},\quad\bar{%
+\bm{\eta}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">¯</mo></mover></mrow><mo>≤</mo><mrow><mrow><mi>β</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">¯</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝜼</mi><mo stretchy="false">¯</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E1Xi" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Dual feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E1Xi.m3" class="ltx_Math" alttext="\displaystyle\bar{\bm{\mu}},\bar{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mover accent="true"><mi>𝝁</mi><mo stretchy="false">¯</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">¯</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
 </div>
-<div id="S1.p12" class="ltx_para">
+<div id="S1.p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">Each KKT point <math id="S1.p12.m1" class="ltx_Math" alttext="(\hat{\bm{w}},\hat{\bm{\xi}},\hat{\bm{\eta}},\hat{\gamma},\hat{\bm{\mu}},\hat{%
+\bm{\lambda}})" display="inline"><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover><mo stretchy="false">)</mo></mrow></math> of (<a href="#S1.Ex7" title="(C-SVM) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag"><math class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>-SVM</span></a>) satisfies:</p>
+<table id="S1.E2" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="S1.E2X" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Stationary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2X.m3" class="ltx_Math" alttext="\displaystyle\hat{\bm{w}}-\bm{P}\hat{\bm{\mu}}+\bm{Q}\hat{\bm{\lambda}}=0" display="inline"><mrow><mrow><mrow><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover><mo>-</mo><mrow><mi>𝑷</mi><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>+</mo><mrow><mi>𝑸</mi><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="9" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equationgroup ltx_align_right">(2)</span></td>
+</tr>
+<tr id="S1.E2Xa" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xa.m2" class="ltx_Math" alttext="\displaystyle C\bm{1}-\hat{\bm{\mu}}\geq 0" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xb" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xb.m2" class="ltx_Math" alttext="\displaystyle C\bm{1}-\hat{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xc" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xc.m2" class="ltx_Math" alttext="\displaystyle\bm{1}^{T}\hat{\bm{\mu}}-\bm{1}^{T}\hat{\bm{\lambda}}=0" display="inline"><mrow><mrow><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover></mrow><mo>-</mo><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xd" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Complementary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xd.m3" class="ltx_Math" alttext="\displaystyle\hat{\bm{\mu}}^{T}(\bm{P}^{T}\hat{\bm{w}}-(\hat{\gamma}+1)\bm{1}+%
+\hat{\bm{\xi}})=0,\quad(C\bm{1}-\hat{\bm{\mu}})^{T}\hat{\bm{\xi}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover></mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>𝟏</mn></mrow></mrow><mo>+</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xe" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xe.m2" class="ltx_Math" alttext="\displaystyle\hat{\bm{\lambda}}^{T}(\bm{Q}^{T}\hat{\bm{w}}-(\hat{\gamma}-1)\bm%
+{1}-\hat{\bm{\eta}})=0,\quad(C\bm{1}-\hat{\bm{\lambda}})^{T}\hat{\bm{\eta}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover></mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xf" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Primal feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xf.m3" class="ltx_Math" alttext="\displaystyle\bm{P}^{T}\hat{\bm{w}}\leq(\hat{\gamma}+1)\bm{1}-\hat{\bm{\xi}},%
+\quad\hat{\bm{\xi}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover></mrow><mo>≤</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xg" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xg.m2" class="ltx_Math" alttext="\displaystyle\bm{Q}^{T}\hat{\bm{w}}\geq(\hat{\gamma}-1)\bm{1}+\hat{\bm{\eta}},%
+\quad\hat{\bm{\eta}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover></mrow><mo>≥</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E2Xh" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Dual feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E2Xh.m3" class="ltx_Math" alttext="\displaystyle\hat{\bm{\mu}},\hat{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p13" class="ltx_para">
+<p class="ltx_p">Assuming <span class="ltx_text" style="color:#800080;"> <math id="S1.p13.m1" class="ltx_Math" alttext="\tilde{\alpha}-\tilde{\beta}&gt;0" display="inline"><mrow><mrow><mover accent="true"><mi mathcolor="#800080">α</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover><mo mathcolor="#800080">-</mo><mover accent="true"><mi mathcolor="#800080">β</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow><mo mathcolor="#800080">&gt;</mo><mn mathcolor="#800080">0</mn></mrow></math></span>, set <math id="S1.p13.m2" class="ltx_Math" alttext="\delta=\frac{2}{\tilde{\alpha}-\tilde{\beta}},\tilde{\alpha}=\frac{\hat{\gamma%
+}+1}{\delta},\tilde{\beta}=\frac{\hat{\gamma}-1}{\delta},\tilde{\bm{w}}=\frac{%
+\hat{\bm{w}}}{\delta},\tilde{\bm{\xi}}=\frac{\hat{\bm{\xi}}}{\delta},\tilde{%
+\bm{\eta}}=\frac{\hat{\bm{\eta}}}{\delta},\tilde{\bm{\mu}}=\frac{\hat{\bm{\mu}%
+}}{\delta},\tilde{\bm{\lambda}}=\frac{\hat{\bm{\lambda}}}{\delta}" display="inline"><mrow><mrow><mi>δ</mi><mo>=</mo><mfrac><mn>2</mn><mrow><mover accent="true"><mi>α</mi><mo stretchy="false">~</mo></mover><mo>-</mo><mover accent="true"><mi>β</mi><mo stretchy="false">~</mo></mover></mrow></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>α</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>+</mo><mn>1</mn></mrow><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>β</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mrow><mover accent="true"><mi>γ</mi><mo stretchy="false">^</mo></mover><mo>-</mo><mn>1</mn></mrow><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>𝒘</mi><mo stretchy="false">^</mo></mover><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>𝝃</mi><mo stretchy="false">^</mo></mover><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>𝜼</mi><mo stretchy="false">^</mo></mover><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover><mi>δ</mi></mfrac></mrow><mo>,</mo><mrow><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover><mi>δ</mi></mfrac></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mrow></math>, and <math id="S1.p13.m3" class="ltx_Math" alttext="\bm{1}^{T}\hat{\bm{\mu}}=\bm{1}^{T}\hat{\bm{\lambda}}=\delta" display="inline"><mrow><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">^</mo></mover></mrow><mo>=</mo><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">^</mo></mover></mrow><mo>=</mo><mi>δ</mi></mrow></math>, and <span class="ltx_text" style="color:#0000FF;"> take <math id="S1.p13.m4" class="ltx_Math" alttext="D=\frac{C}{\delta}" display="inline"><mrow><mi mathcolor="#0000FF">D</mi><mo mathcolor="#0000FF">=</mo><mfrac mathcolor="#0000FF"><mi mathcolor="#0000FF">C</mi><mi mathcolor="#0000FF">δ</mi></mfrac></mrow></math></span>, we have:</p>
+<table id="S1.E3" class="ltx_equationgroup ltx_eqn_table">
+
+<tr id="S1.E3X" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Stationary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3X.m3" class="ltx_Math" alttext="\displaystyle\tilde{\bm{w}}-\bm{P}\tilde{\bm{\mu}}+\bm{Q}\tilde{\bm{\lambda}}=0" display="inline"><mrow><mrow><mrow><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover><mo>-</mo><mrow><mi>𝑷</mi><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover></mrow></mrow><mo>+</mo><mrow><mi>𝑸</mi><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="9" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equationgroup ltx_align_right">(3)</span></td>
+</tr>
+<tr id="S1.E3Xa" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xa.m2" class="ltx_Math" alttext="\displaystyle D\bm{1}-\tilde{\bm{\mu}}\geq 0" display="inline"><mrow><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xb" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xb.m2" class="ltx_Math" alttext="\displaystyle D\bm{1}-\tilde{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xc" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xc.m2" class="ltx_Math" alttext="\displaystyle\bm{1}^{T}\tilde{\bm{\mu}}=\bm{1}^{T}\tilde{\bm{\lambda}}=1" display="inline"><mrow><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover></mrow><mo>=</mo><mrow><msup><mn>𝟏</mn><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xd" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Complementary:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xd.m3" class="ltx_Math" alttext="\displaystyle\tilde{\bm{\mu}}^{T}(\bm{P}^{T}\tilde{\bm{w}}-\tilde{\alpha}\bm{1%
+}+\tilde{\bm{\xi}})=0,\quad(D\bm{1}-\tilde{\bm{\mu}})^{T}\tilde{\bm{\xi}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover></mrow><mo>-</mo><mrow><mover accent="true"><mi>α</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mn>𝟏</mn></mrow></mrow><mo>+</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xe" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xe.m2" class="ltx_Math" alttext="\displaystyle\tilde{\bm{\lambda}}^{T}(\bm{Q}^{T}\tilde{\bm{w}}-\tilde{\beta}%
+\bm{1}-\tilde{\bm{\eta}})=0,\quad(D\bm{1}-\tilde{\bm{\lambda}})^{T}\tilde{\bm{%
+\eta}}=0" display="inline"><mrow><mrow><mrow><msup><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover></mrow><mo>-</mo><mrow><mover accent="true"><mi>β</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>D</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xf" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Primal feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xf.m3" class="ltx_Math" alttext="\displaystyle\bm{P}^{T}\tilde{\bm{w}}\leq\tilde{\alpha}\bm{1}-\tilde{\bm{\xi}}%
+,\quad\tilde{\bm{\xi}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑷</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover></mrow><mo>≤</mo><mrow><mrow><mover accent="true"><mi>α</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xg" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xg.m2" class="ltx_Math" alttext="\displaystyle\bm{Q}^{T}\tilde{\bm{w}}\geq\tilde{\beta}\bm{1}+\tilde{\bm{\eta}}%
+,\quad\tilde{\bm{\eta}}\geq 0" display="inline"><mrow><mrow><mrow><msup><mi>𝑸</mi><mi>T</mi></msup><mo>⁢</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover></mrow><mo>≥</mo><mrow><mrow><mover accent="true"><mi>β</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover><mo>≥</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.E3Xh" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell">
+<span class="ltx_text ltx_markedasmath ltx_font_italic">Dual feasibility:</span><span class="ltx_text ltx_font_italic"></span>
+</td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E3Xh.m3" class="ltx_Math" alttext="\displaystyle\tilde{\bm{\mu}},\tilde{\bm{\lambda}}\geq 0" display="inline"><mrow><mrow><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover></mrow><mo>≥</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which coincides with (<a href="#S1.E1" title="(1) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), and implies that <math id="S1.p13.m5" class="ltx_Math" alttext="(\tilde{\bm{w}},\tilde{\bm{\xi}},\tilde{\bm{\eta}},\tilde{\alpha},\tilde{\beta%
+},\tilde{\bm{\mu}},\tilde{\bm{\lambda}})" display="inline"><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>𝒘</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>𝝃</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>𝜼</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>α</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>β</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>𝝁</mi><mo stretchy="false">~</mo></mover><mo>,</mo><mover accent="true"><mi>𝝀</mi><mo stretchy="false">~</mo></mover><mo stretchy="false">)</mo></mrow></math> is a KKT point to (<a href="#S1.Ex2" title="(S-Margin) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">S-Margin</span></a>). <span class="ltx_text" style="color:#800080;">
+The assumption <math id="S1.p13.m6" class="ltx_Math" alttext="\tilde{\alpha}-\tilde{\beta}&gt;0" display="inline"><mrow><mrow><mover accent="true"><mi mathcolor="#800080">α</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover><mo mathcolor="#800080">-</mo><mover accent="true"><mi mathcolor="#800080">β</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow><mo mathcolor="#800080">&gt;</mo><mn mathcolor="#800080">0</mn></mrow></math> is from the strong duality of (<a href="#S1.Ex2" title="(S-Margin) ‣ C-SVM ‣ SVM and Polytope Distance" class="ltx_ref"><span class="ltx_text ltx_ref_tag">S-Margin</span></a>):</span></p>
+<table id="S1.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex8.m1" class="ltx_Math" alttext="\frac{1}{2}\|\tilde{\bm{w}}\|^{2}+D(\bm{1}^{T}\tilde{\bm{\xi}}+\bm{1}^{T}%
+\tilde{\bm{\eta}})-(\tilde{\alpha}-\tilde{\beta})=-\frac{1}{2}\|\bm{P}\tilde{%
+\bm{\mu}}-\bm{Q}\tilde{\bm{\lambda}}\|^{2}&lt;0," display="block"><mrow><mrow><mrow><mrow><mrow><mfrac mathcolor="#800080"><mn mathcolor="#800080">1</mn><mn mathcolor="#800080">2</mn></mfrac><mo mathcolor="#800080">⁢</mo><msup><mrow><mo mathcolor="#800080">∥</mo><mover accent="true"><mi mathcolor="#800080">𝒘</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover><mo mathcolor="#800080">∥</mo></mrow><mn mathcolor="#800080">2</mn></msup></mrow><mo mathcolor="#800080">+</mo><mrow><mi mathcolor="#800080">D</mi><mo mathcolor="#800080">⁢</mo><mrow><mo mathcolor="#800080" stretchy="false">(</mo><mrow><mrow><msup><mn mathcolor="#800080">𝟏</mn><mi mathcolor="#800080">T</mi></msup><mo mathcolor="#800080">⁢</mo><mover accent="true"><mi mathcolor="#800080">𝝃</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow><mo mathcolor="#800080">+</mo><mrow><msup><mn mathcolor="#800080">𝟏</mn><mi mathcolor="#800080">T</mi></msup><mo mathcolor="#800080">⁢</mo><mover accent="true"><mi mathcolor="#800080">𝜼</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow></mrow><mo mathcolor="#800080" stretchy="false">)</mo></mrow></mrow></mrow><mo mathcolor="#800080">-</mo><mrow><mo mathcolor="#800080" stretchy="false">(</mo><mrow><mover accent="true"><mi mathcolor="#800080">α</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover><mo mathcolor="#800080">-</mo><mover accent="true"><mi mathcolor="#800080">β</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow><mo mathcolor="#800080" stretchy="false">)</mo></mrow></mrow><mo mathcolor="#800080">=</mo><mrow><mo mathcolor="#800080">-</mo><mrow><mfrac mathcolor="#800080"><mn mathcolor="#800080">1</mn><mn mathcolor="#800080">2</mn></mfrac><mo mathcolor="#800080">⁢</mo><msup><mrow><mo mathcolor="#800080">∥</mo><mrow><mrow><mi mathcolor="#800080">𝑷</mi><mo mathcolor="#800080">⁢</mo><mover accent="true"><mi mathcolor="#800080">𝝁</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow><mo mathcolor="#800080">-</mo><mrow><mi mathcolor="#800080">𝑸</mi><mo mathcolor="#800080">⁢</mo><mover accent="true"><mi mathcolor="#800080">𝝀</mi><mo mathcolor="#800080" stretchy="false">~</mo></mover></mrow></mrow><mo mathcolor="#800080">∥</mo></mrow><mn mathcolor="#800080">2</mn></msup></mrow></mrow><mo mathcolor="#800080">&lt;</mo><mn mathcolor="#800080">0</mn></mrow><mo mathcolor="#800080">,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text" style="color:#800080;">where we assume the objective value is strictly greater than 0, i.e. the reduced convex hulls are linear separable.</span>
+∎</p>
+</div>
+</div>
+<div id="S1.p14" class="ltx_para ltx_noindent">
+<p class="ltx_p">The figure below illustrates how the reduced polytope works. The left picture shows the original problem where the polytopes are not linearly separable, which corresponds to the parameter choice <math id="S1.p14.m1" class="ltx_Math" alttext="D=1" display="inline"><mrow><mi>D</mi><mo>=</mo><mn>1</mn></mrow></math>. The right picture shows an example of reduced polytope, where the reduced polytopes are linearly separable, and it corresponds to the case when the parameter <math id="S1.p14.m2" class="ltx_Math" alttext="D&lt;1" display="inline"><mrow><mi>D</mi><mo>&lt;</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<figure id="S1.fig1" class="ltx_figure"><img src="c_svm_pd/c_svm_illustration.png" id="S1.g1" class="ltx_graphics" width="541" height="137" alt="">
+</figure>
+<div id="S1.p15" class="ltx_para">
 <p class="ltx_p"></p>
 </div>
 </section>
@@ -360,7 +612,6 @@ T}\bm{\eta}" display="inline"><mrow><mrow><mo>+</mo><mrow><msup><mi>𝝀</mi><mi
 </span>
 <span class="ltx_bibblock">Vol. <span class="ltx_text ltx_bib_volume">2000</span>, <span class="ltx_text ltx_bib_pages"> pp. 57–64</span>.
 </span>
-</span>
 </li>
 <li id="bib.bib1" class="ltx_bibitem ltx_bib_inproceedings">
 <span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[2]</span>
@@ -371,7 +622,6 @@ T}\bm{\eta}" display="inline"><mrow><mrow><mo>+</mo><mrow><msup><mi>𝝀</mi><mi
 <span class="ltx_bibblock">In <span class="ltx_text ltx_bib_inbook">Proceedings of the twenty-fifth annual symposium on Computational geometry</span>,
 </span>
 <span class="ltx_bibblock"><span class="ltx_text ltx_bib_pages"> pp. 33–42</span>.
-</span>
 </span>
 </li>
 </ul>

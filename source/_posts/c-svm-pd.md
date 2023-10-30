@@ -3,6 +3,7 @@ layout: html
 title: C-SVM and polytope distance
 date: 2023-10-27 21:45:02
 tags: math
+mathjax: true
 ---
 
 The soft-margin SVM problem ($C$-SVM) is equivalent to the reduced polytope distance problem.

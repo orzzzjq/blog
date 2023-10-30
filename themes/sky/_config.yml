@@ -4,3 +4,7 @@ menu:
   Archives: /archives
   Tags: /tags
   # About: /about
+# mathjax:
+#   enable: true
+#   per_page: false
+#   cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
