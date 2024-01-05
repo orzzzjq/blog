@@ -1,6 +1,6 @@
 ---
 title: How does this blog work?
-date: 2023-11-04 15:55:39
+date: 2024-01-05 18:32:00
 tags: misc
 mathjax: true
 ---
