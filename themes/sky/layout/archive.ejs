@@ -14,7 +14,7 @@
     <% } %>
 
     <% year = 0 %>
-    <% site.posts.forEach(function(post){ %>
+    <% site.posts.sort('date', -1).forEach(function(post){ %>
         <% if (page.archive) { %>
             <% post.year = date(post.date, 'YYYY') %>
             <% if (year != post.year) { %>
