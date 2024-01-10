@@ -7,9 +7,9 @@
     <div class="tags-archives">
         <% site.tags.map(function (tag) { %>
             <span class="tag-text"><%= tag.name %></span>
-            <% tag.posts.map(function (post) { %>
+            <% tag.posts.sort('date', -1).map(function (post) { %>
                 <div class="tags-post">
-                    <span class="tags-post-time"><%- date(post.date, 'YYYY-MM-DD')%></span>
+                    <span class="tags-post-time" style="margin-right:.5em"><%- date(post.date, 'YYYY-MM-DD')%></span>
                     <span class="tags-post-title">
                         <a class="tags-post-link" href="<%= url_for(post.path) %>"><%- post.title %></a>
                     </span>
