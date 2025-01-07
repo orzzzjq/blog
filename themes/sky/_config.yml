@@ -3,7 +3,7 @@ menu:
   Home: /
   Archives: /archives
   Tags: /tags
-  # About: /about
+  About: /about
 # mathjax:
 #   enable: true
 #   per_page: false
